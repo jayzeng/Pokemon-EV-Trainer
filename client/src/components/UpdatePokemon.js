@@ -44,7 +44,7 @@ const UpdatePokemon = (props) => {
         .catch((err) => {
             console.log(err);
         })
-    }, [])
+    }, [id])
 
     const onChangeHandler = (e) => {
         setPokemon({...pokemon, [e.target.name]: e.target.value})

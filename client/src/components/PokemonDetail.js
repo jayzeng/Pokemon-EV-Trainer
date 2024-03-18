@@ -20,7 +20,7 @@ const PokemonDetail = (props) => {
             .catch((err) => {
                 console.log(err);
             })
-    }, []);
+    }, [id]);
 
     const deleteHandler = (id) => {
         axios.delete('http://localhost:8000/api/deletePokemon/' + id)
